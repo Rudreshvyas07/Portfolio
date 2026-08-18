@@ -7,7 +7,9 @@ const experiences = [
     title: 'Customer Relationship Management System',
     description:
       'Contributed to the development of a Customer Relationship Management (CRM) system, as a full stack developer during my internship at Accurate Solutions.',  
+    url : 'https://accuratesolutions-crm.onrender.com/',
     },
+    ,
   {
     image: '/vs.png',
     alt: 'Enkryptia logo',
