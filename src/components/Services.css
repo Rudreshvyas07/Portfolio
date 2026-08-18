@@ -1,0 +1,186 @@
+.services-section {
+  padding: 80px 6%;
+  background: #020713;
+  color: white;
+}
+
+.services-section h2 {
+  text-align: center;
+  font-size: 56px;
+  font-weight: 800;
+  margin-bottom: 70px;
+  letter-spacing: 2px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.service-card {
+  height: 190px;
+  background: #111b2b;
+  border: 1px solid #26344a;
+  border-radius: 24px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  border-color: #4b607c;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+.service-icon {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.service-icon svg {
+  width: 62px;
+  height: 62px;
+}
+
+.service-card h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #d8deea;
+}
+
+/* Individual icon colors */
+
+.service-card:nth-child(1) .service-icon {
+  color: #e34f26;
+}
+
+.service-card:nth-child(2) .service-icon {
+  color: #1572b6;
+}
+
+.service-card:nth-child(3) .service-icon {
+  color: #f7df1e;
+}
+
+.service-card:nth-child(4) .service-icon {
+  color: #61dafb;
+}
+
+.service-card:nth-child(5) .service-icon {
+  color: white;
+}
+
+.service-card:nth-child(6) .service-icon {
+  color: #38bdf8;
+}
+
+.service-card:nth-child(7) .service-icon {
+  color: #47a248;
+}
+
+.service-card:nth-child(8) .service-icon {
+  color: #3ecf8e;
+}
+
+.service-card:nth-child(9) .service-icon {
+  color: #4479a1;
+}
+
+.service-card:nth-child(10) .service-icon {
+  color: #a8b9cc;
+}
+
+.service-card:nth-child(11) .service-icon {
+  color: #00599c;
+}
+
+.service-card:nth-child(12) .service-icon {
+  color: #3776ab;
+}
+
+.service-card:nth-child(13) .service-icon {
+  color: white;
+}
+
+.service-card:nth-child(14) .service-icon {
+  color: #276dc3;
+}
+
+.service-card:nth-child(15) .service-icon {
+  color: #fcc624;
+}
+
+.service-card:nth-child(16) .service-icon {
+  color: #f05032;
+}
+
+.service-card:nth-child(17) .service-icon {
+  color: white;
+}
+
+.service-card:nth-child(18) .service-icon {
+  color: #2496ed;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .services-section {
+    padding: 50px 20px;
+  }
+
+  .services-section h2 {
+    font-size: 42px;
+    margin-bottom: 50px;
+  }
+
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .service-card {
+    height: 170px;
+    border-radius: 20px;
+  }
+
+  .service-icon svg {
+    width: 55px;
+    height: 55px;
+  }
+
+  .service-card h3 {
+    font-size: 16px;
+  }
+}
+
+
+/* Very small phones */
+
+@media (max-width: 450px) {
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .service-card {
+    height: 155px;
+  }
+
+  .service-icon svg {
+    width: 50px;
+    height: 50px;
+  }
+}
