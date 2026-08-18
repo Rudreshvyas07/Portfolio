@@ -2,19 +2,20 @@ import { useIntersectionObserver } from '../hooks/useIntersectionObserver'
 
 const experiences = [
   {
-    image: '/enkry.jpg',
+    image: '/crm.png',
     alt: 'Enkryptia logo',
-    title: 'Organizer in Enkryptia (2023–2024)',
+    title: 'Customer Relationship Management System',
     description:
-      'Enkryptia was a 24-hour hackathon hosted by the IT Department at Government Polytechnic Nagpur. It included all amenities and problem statements, with a ₹30K prize pool. A grand, well-organized tech event!',
-  },
+      'Contributed to the development of a Customer Relationship Management (CRM) system, as a full stack developer during my internship at Accurate Solutions.',  
+    },
   {
-    image: '/enkry.jpg',
+    image: '/vs.png',
     alt: 'Enkryptia logo',
-    title: 'Chairman of InfoCom 2k26',
+    title: 'E-commerce Website',
     description:
-      'InfoCom is a official Committee of IT Department of Government Polytechnic Nagpur. It is a platform for students to showcase their skills and talents.Under this , we organize enkryptia , it includes events like hackathon , MUN , etc.',
-  },
+      'Worked as a backend developer in a team of 4 people and using node.js as a backend technology.',
+  url : 'https://vastraverse-online-clothing-shopping-ye1e.onrender.com/',  
+    },
  
 ]
 
@@ -27,8 +28,8 @@ export default function Projects() {
       id="projects"
       className={`work-section ${isVisible ? 'visible' : ''}`}
     >
-      <span className="text-grey">What I have done so far</span>
-      <h2>Work Experience</h2>
+     
+      <h2>Projects</h2>
 
       <div className="experience-grid">
         {experiences.map((exp) => (
@@ -36,6 +37,12 @@ export default function Projects() {
             <img className="experience-logo" src={exp.image} alt={exp.alt} />
             <h3 className="experience-title">{exp.title}</h3>
             <p className="experience-desc">{exp.description}</p>
+     <button
+  onClick={() => window.open(exp.url, '_blank')}
+  className="mt-4 bg-green-500 text-black rounded-full px-4 py-2 text-sm leading-none hover:bg-green-400 transition"
+>
+  View Project
+</button>
           </article>
         ))}
       </div>
